@@ -103,6 +103,8 @@
     <hr />
     <p><%=h @blog.post.html_safe %></p>
     <br /><br />
+    <div class="fb-like" data-href="https://www.facebook.com/NuvolaNetworks" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    <div class="fb-comments" data-href="https://www.facebook.com/NuvolaNetworks" data-numposts="5" data-colorscheme="light"></div>
     <% if user_signed_in? %>
     <% if current_user.has_role? :admin %>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
